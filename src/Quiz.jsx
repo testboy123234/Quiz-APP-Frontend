@@ -10,7 +10,7 @@ const Quiz = () => {
   useEffect(() => {
     const getQuizData = async () => {
       try {
-        const response = await axios.get("http://localhost:4000/api/v1/quizzes");
+        const response = await axios.get("https://quiz-three-lilac.vercel.app/api/v1/quizzes");
         if (response.status === 200) {
           setQuizData(response.data.data);
         }
